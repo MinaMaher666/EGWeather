@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">EGWeather</string>
+
+    <!-- API Strings -->
+    <string name="api_base_url">http://api.openweathermap.org/data/2.5/box/city</string>
+    <string name="param_bbox_key">bbox</string>
+    <string name="param_bbox_value">24.2,22.3,34,32.1,10</string>
+    <string name="param_api_key">appid</string>
+    <string name="api_key">7756ba74c38221b3e8fabebfc615b268</string>
+
+
+    <!-- JSON Strings -->
+    <string name="cities_list">list</string>
+    <string name="city_id">id</string>
+    <string name="city_name">name</string>
+    <string name="city_coord">coord</string>
+    <string name="coord_lat">Lat</string>
+    <string name="coord_lon">Lon</string>
+    <string name="main_weather">main</string>
+    <string name="temp">temp</string>
+    <string name="min_temp">temp_min</string>
+    <string name="max_temp">temp_max</string>
+    <string name="pressure">pressure</string>
+    <string name="humidity">humidity</string>
+    <string name="wind">wind</string>
+    <string name="wind_speed">speed</string>
+    <string name="wind_degree">deg</string>
+    <string name="weather">weather</string>
+    <string name="weather_id">id</string>
+    <string name="weather_main">main</string>
+    <string name="weather_des">description</string>
+    <string name="weather_icon">icon</string>
+
+    <string name="base_icon_url">http://openweathermap.org/img/w/</string>
+
+
+    <string name="egypt_lat">26.8206</string>
+    <string name="egypt_lng">30.8025</string>
+</resources>

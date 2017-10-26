@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="32dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:context="com.example.rev.egweather.ui.DetailActivity">
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintLeft_toLeftOf="@+id/main_temp"
+            app:layout_constraintRight_toRightOf="@+id/min_temp"
+            app:layout_constraintTop_toBottomOf="@+id/main_temp"
+            tools:text="Matrouh" />
+
+        <TextView
+            android:id="@+id/main_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="152dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="61dp"
+            android:text="34\u00B0/"
+            android:textSize="@dimen/extra_font"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/min_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28"
+            android:textSize="@dimen/large_font"
+            app:layout_constraintBaseline_toBaselineOf="@+id/main_temp"
+            app:layout_constraintLeft_toRightOf="@+id/main_temp" />
+
+        <ImageView
+            android:id="@+id/weather_icn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/city_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/main_temp"
+            app:layout_constraintTop_toTopOf="@+id/main_temp"
+            app:layout_goneMarginRight="16dp"
+            tools:src="@drawable/ibs_logo" />
+
+        <TextView
+            android:id="@+id/weather_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/weather_icn"
+            app:layout_constraintLeft_toLeftOf="@+id/weather_icn"
+            app:layout_constraintRight_toRightOf="@+id/weather_icn"
+            app:layout_constraintTop_toBottomOf="@+id/weather_icn"
+            tools:text="Rain" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:text="Humidity: 17%" />
+
+        <TextView
+            android:id="@+id/pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="#000"
+            tools:text="Pressure: 921 hPa" />
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="#000"
+            tools:text="Wind: 46 km/h  15\u00B0" />
+
+
+    </LinearLayout>
+</LinearLayout>

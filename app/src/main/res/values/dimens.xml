@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item format="float" name="egypt_lat" type="dimen">26.8206</item>
+    <item format="float" name="egypt_lng" type="dimen">30.8025</item>
+    <dimen name="very_small_margin">4dp</dimen>
+    <dimen name="normal_padding">8dp</dimen>
+
+
+    <dimen name="extra_font">34sp</dimen>
+    <dimen name="large_font">22sp</dimen>
+    <dimen name="normal_font">18sp</dimen>
+</resources>
